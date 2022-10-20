@@ -1,10 +1,10 @@
 package sendsms
 
 import (
+	"sendsms/pkg/sendsms/pack"
+	"sendsms/pkg/sendsms/sendsms"
+	"sendsms/pkg/server/sendsms/utils"
 	"sync"
-	"test/pkg/sendsms/pack"
-	"test/pkg/sendsms/sendsms"
-	"test/pkg/server/sendsms/utils"
 )
 
 var wg sync.WaitGroup

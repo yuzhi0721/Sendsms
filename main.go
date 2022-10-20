@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"test/pkg/server/sendsms"
+	"sendsms/pkg/server/sendsms"
 	"time"
 )
 

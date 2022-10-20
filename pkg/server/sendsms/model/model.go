@@ -10,7 +10,7 @@ type Message struct {
 	Content  string
 }
 
-var Jobs []chan Task
+//var Jobs []chan Task
 
 func NewIntChan() []int {
 	return make([]int, 0)
