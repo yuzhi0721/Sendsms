@@ -1,6 +1,7 @@
 package sendsms
 
 import (
+	"fmt"
 	"sendsms/pkg/sendsms/pack"
 	"sendsms/pkg/sendsms/sendsms"
 	"sendsms/pkg/server/sendsms/utils"
@@ -21,5 +22,6 @@ func SendSms() {
 	utils.WgNum(y, &wg)
 	sendMessage.SendData(*Message, x, y, &wg)
 	sendMessage.ReceiveData(*Message, y, &wg)
+	fmt.Println("rebase")
 	wg.Wait()
 }
